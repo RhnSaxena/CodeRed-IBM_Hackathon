@@ -1,0 +1,18 @@
+Rep : This is Aakash. How can I help you?
+caller: This is Rohan. I want to book a table.
+Rep : Sure, I can help you. Can you tell me the number from which you are calling now?
+Caller: yes, 8567345423
+Rep: For verification purpose may I know your date of birth and email id
+Caller: My date of birth is 30-Jan-1998 and my email id is rohansaxena19@gmail.com
+Rep: Can you tell me your address?
+Caller : Flat No. 45, Tower T1, RPS Savana, New Delhi.
+Rep: Sir may I please know your Aadhar card number, just need to cross-check.
+Caller: Yeah alright. It's 194532687469.
+Caller: Hey I work at Apple, that allows me for a coupon right?
+Rep: Sure sir! I just need to know your Employee ID and date of joining.
+Caller: Alright it's #6197314 and my date of joining is 22nd January 2017.
+Rep: Ok sir. I have availed a 10% cashback coupon on your orders, just need you to tell me your Debit Card number to confirm payment.
+Caller: Just a sec....... It's 4589-3210-8679-1497.
+Rep: Alright sir hope you like the meal, is there any other thing I can do for you.
+Caller: No,thank you.
+
