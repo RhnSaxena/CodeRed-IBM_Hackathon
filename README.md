@@ -1,4 +1,4 @@
-# CodeRED:IBM Hackathon
+# CodeRED : IBM Hackathon
 
 #Off the Grid
 
@@ -8,9 +8,9 @@ We have used IBM Cloud Services , specifically IBM NLU Api, IBM Watson Knowledge
 
 Technologies Used :
 
-*IBM Cloud	*IBM Watson Knowledge Centre	*IBM Natural Language Understanding		*Node.js
+●IBM Cloud	●IBM Watson Knowledge Centre	●IBM Natural Language Understanding		●Node.js
 
 
 Creators / Collaborators :
 
-Siddharth Kumar Verma	Rohan Saxena	Himanshu Pandey
+Siddharth Kumar Verma	◊	Rohan Saxena	◊	Himanshu Pandey
