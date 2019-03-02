@@ -1,0 +1,10 @@
+Rep : This is Aakash. How can I help you?
+caller: This is Rohan. I want to book a table.
+Rep : Sure, I can help you. Can you tell me the number from which you are calling now?
+Caller: yes, 8567345423
+Rep: For verification purpose may I know your date of birth and email id
+Caller: My data of birth is 30-Jan-1998 and my email id is rohansaxena19@gmail.com
+Rep: Can you tell me your address?
+Caller : Flat No. 45, Tower T1, RPS Savana, New Delhi.
+Rep: Thanks.
+Caller: you too

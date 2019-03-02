@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+</head>
+<body class="">
+
+<!-- As a heading -->
+<nav class="navbar navbar-light unique-color">
+  <span class="navbar-brand" style="color: white">Off the Grid </span>
+</nav>
+
+
+<div class="container mt-5">
+  <div class="card z-depth-2 p-5 m-5 blue-gradient">
+    <div class="row">
+      <div class="col-6" style="margin:0 auto">
+          <form action="/upload" method="post" enctype="multipart/form-data">
+              <input type="file" name="files" class="btn unique-color-dark" id="file" required="required" multiple>
+              <button class="btn unique-color-dark" type="submit" style="border-radius: 4px;">
+                  Upload
+              </button>
+          </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6" style="margin:0 auto">
+          <form action="/analyze" method="post">
+              <div class="form-group shadow-textarea">
+                <label for="exampleFormControlTextarea6"><h2>OR</h2></label>
+                <textarea class="form-control z-depth-1" id="tex" name="tex" rows="3" required="required" placeholder="Write something here..."></textarea>
+              </div>
+              <button class="btn unique-color-dark" type="submit"  style="border-radius: 4px;">
+                  Upload
+              </button>
+           <!--    <a href="/redact">Click</a> -->
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
