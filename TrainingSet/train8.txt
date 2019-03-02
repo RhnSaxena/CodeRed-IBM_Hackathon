@@ -1,0 +1,16 @@
+Rep : This is Shubham. How can I help you?
+caller: This is Rishi. I want to book a table.
+Rep : Sure, I can help you. Can you tell me the number from which you are calling now?
+Caller: yes, 9880516713.
+Rep: For verification purpose may I know your date of birth and email id
+Caller: My date of birth is 18th-Apr-1995 and my email id is XXXTENTACION@rediffmail.com
+Rep: May I know your address?
+Caller: my address is Quarter Number B-27, W.C.L. Jaripatka, Nagpur.
+Rep: Sir we have a special discount for employees of nearby businesses, would you like to apply for the same?
+Caller: yeah, why not! I work at the nearby Walmart.
+Rep: Sir I just need your Aadhar and date of joinig for verification.
+Caller: Yeah my Aadhar is 120085473498 and my joinig date is 8th June 2015.
+Rep: Ok sir I just need to know your Debit Card details for advanced booking.
+Caller: Ok it's 7125-6458-3158-1598. 
+Rep: Thanks sir, have a good day.
+Caller: you too.
