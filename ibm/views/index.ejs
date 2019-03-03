@@ -30,12 +30,14 @@
   <div class="card z-depth-2 p-5 m-5 blue-gradient">
     <div class="row">
       <div class="col-6" style="margin:0 auto">
-          <form action="/upload" method="post" enctype="multipart/form-data">
-              <input type="file" name="files" class="btn unique-color-dark" id="file" required="required" multiple>
+          <form action="/upload" method="post">
+              <input type="file" name="files" id="fileInput" class="btn unique-color-dark" id="file" required="required" multiple>
+              <textarea hidden="hidden" class="form-control z-depth-1" id="texa" name="texa" rows="3" required="required" placeholder="Write something here..."></textarea>
               <button class="btn unique-color-dark" type="submit" style="border-radius: 4px;">
                   Upload
               </button>
           </form>
+          <pre id="fileDisplayArea"><pre>
       </div>
     </div>
     <div class="row">
@@ -54,6 +56,30 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  window.onload = function() {
+    var fileInput = document.getElementById('fileInput');
+    var fileDisplayArea = document.getElementById('fileDisplayArea');
 
+    fileInput.addEventListener('change', function(e) {
+      var file = fileInput.files[0];
+      var textType = /text.*/;
+
+      if (file.type.match(textType)) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          fileDisplayArea.innerText = reader.result;
+          document.getElementById('texa').value=reader.result;
+        }
+
+        reader.readAsText(file);  
+      } else {
+        fileDisplayArea.innerText = "File not supported!"
+      }
+    });
+}
+
+</script>
 </body>
 </html>

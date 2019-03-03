@@ -26,14 +26,34 @@
 </nav>
 
 
-<div class="container mt-5">
-  <div class="h1"> Here You Go </div>
-  <div class="card z-depth-2 mx-auto p-5 m-5 blue-gradient" style="color: white; font-size: 1.25rem; max-height: 500px; max-width: 500px; margin: 0 auto;">
+<div class="container">
+  <div>
+    <div class="h1"> Here You Go </div>
+    <form onsubmit="download(this['name'].value, this['text'].value)">
+      <input type="text" name="name" value="test.txt" hidden="hidden">
+      <input type="text" name="text" hidden="hidden" value="<%=out%>">
+      <input type="submit" class="btn btn-default" value="Download">
+    </form>
+  </div>
+  <div class="card z-depth-2 mx-auto p-5 m-5 blue-gradient" style="color: white; font-size: 1.25rem; overflow: scroll; max-height: 400px; max-width: 700px; margin: 0 auto;">
     <%=out %>
   </div>
   
 </div>
 
+<script type="text/javascript">
+  function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
 
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+</script>
 </body>
 </html>

@@ -51,11 +51,16 @@ function analyze(){
       var t=false;
       output =response;
       console.log(output);
-      g = text.split(" ");
+      g = text.split(/[\s,]+/);
       console.log(g);
       g.forEach((y)=>{
         t=false;
+        var lastChar = y[y.length -1];
+        if(lastChar.localeCompare(".")==0){
+            y = y.substring(0, y.length - 1);
+          }
         output.entities.forEach((x)=>{
+          var fg=x.length;
            if(y.localeCompare(x.text)==0){
             console.log("hey");
             h.push("***********");
@@ -92,44 +97,12 @@ app.post('/analyze', function (req, res) {
   res.redirect("/loading");
 });
 
-
-
-
-
-
-
-
-var filenam="";
-var storage = multer.diskStorage({
-    destination: function (req, file, callback) {
-        var dir = './uploads';
-        if (!fs.existsSync(dir)){
-            fs.mkdirSync(dir);
-        }
-        callback(null, dir);
-    },
-    filename: function (req, file, callback) {
-      filenam="uploads/"+file.originalname;
-        callback(null, file.originalname);
-    }
-});
-var upload = multer({storage: storage}).array('files', 12);
-
 app.post('/upload', function (req, res, next) {
 
-    upload(req, res, function (err) {
-        if (err) {
-            return res.end("Something went wrong:(");
-        }else{
-            var fs = require("fs");
-            fs.readFile(filenam, function(err, buf) {
-              text = buf;
-              console.log(buf);
-            });
-
-          res.end("Upload completed."+filenam+" "+text);
-        }
-    });
+    text = req.body.texa;
+    console.log(text);
+    analyze();
+    res.redirect("/loading");
 
 })
 
