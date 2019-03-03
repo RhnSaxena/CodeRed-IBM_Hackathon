@@ -1,7 +1,21 @@
 ﻿
 # CodeRED : IBM Hackathon
 
-#Off the Grid
+----
+
+## Off the Grid
+
+### Pre-requisite:
+
+● IBM Cloud Account
+
+● IBM Watson Knowledge Centre Account	
+
+● IBM Natural Language Understanding API Service
+
+● IBM Watson Language Translator API Service
+	
+● Node.js installed on a local machine
 
 ### Instruction to run
 > Clone the repo into your PC
@@ -18,6 +32,8 @@
 
 ### Demo
 > Live Demo at https://ibmoffthegrid.herokuapp.com/
+
+> Video Link : https://drive.google.com/file/d/1RlxFqiNt01eUKRFK7f7kfzE-ojn9cIa3/view?usp=sharing
 
 ## About
 
@@ -41,7 +57,6 @@ All the training set used for training the machine learning model is available i
 
 Along with it, the Entity Set used for the Documents is also available as "Entity Set.json" .
 
-The demo for the application is deployed on 
 Creators / Collaborators :
 
 Rohan Saxena&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siddharth Kumar Verma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Himanshu Pandey
