@@ -2,6 +2,7 @@
 # CodeRED : IBM Hackathon
 
 #Off the Grid
+
 ### Instruction to run
 > Clone the repo into your PC
 
@@ -15,7 +16,7 @@
 
 > Server is started at http://localhost:3000/
 
-##About
+#About
 
 The project is designed with the aim to identify sensitive personal information from an unstructured data and redact/mask it for privacy concerns. 
 
@@ -28,6 +29,8 @@ Technologies Used :
 ● IBM Watson Knowledge Centre	
 
 ● IBM Natural Language Understanding	
+
+● IBM Watson Language Translator	
 	
 ● Node.js
 
@@ -38,4 +41,4 @@ Along with it, the Entity Set used for the Documents is also available as "Entit
 The demo for the application is deployed on 
 Creators / Collaborators :
 
-Rohan Saxena		Siddharth Kumar Verma		Himanshu Pandey
+Rohan Saxena&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siddharth Kumar Verma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Himanshu Pandey
