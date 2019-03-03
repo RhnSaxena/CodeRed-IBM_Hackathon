@@ -1,3 +1,4 @@
+
 # CodeRED : IBM Hackathon
 
 #Off the Grid
@@ -8,9 +9,16 @@ We have used IBM Cloud Services , specifically IBM NLU Api, IBM Watson Knowledge
 
 Technologies Used :
 
-●IBM Cloud	●IBM Watson Knowledge Centre	●IBM Natural Language Understanding		●Node.js
+●IBM Cloud	
+●IBM Watson Knowledge Centre	
+●IBM Natural Language Understanding		
+●Node.js
 
+All the training set used for training the machine learning model is available in the "Training Set" Folder.
 
+Along with it, the Entity Set used for the Documents is also available as "Entity Set.json" .
+
+The demo for the application is deployed on 
 Creators / Collaborators :
 
-Siddharth Kumar Verma	◊	Rohan Saxena	◊	Himanshu Pandey
+Rohan Saxena		Siddharth Kumar Verma		Himanshu Pandey
