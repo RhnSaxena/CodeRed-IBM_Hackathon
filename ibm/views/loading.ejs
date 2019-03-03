@@ -4,6 +4,23 @@
   <title>Loading</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -98,12 +115,21 @@
   </style>
 </head>
 <body>
-  <div style="text-align:center; margin:15px;">Hang On while we process</div>
-  <div class="loader"></div>
+  <nav class="navbar navbar-light unique-color">
+  <span class="navbar-brand" style="color: white">
+    <a href="/" style="color: white;">Off the Grid</a>
+  </span>
+  <span style="font-size: 0.5rem; color: white">Powered by
+    <img src="https://cdn.freebiesupply.com/images/large/2x/ibm-logo-black-transparent.png" style="max-width: 65px;">
+    </span>
+</nav>
+
+  <div style="text-align:center; font-size: 1.5rem;"  class="mt-5">Hang on while we process</div>
+  <div class="loader mt-5 pt-4"></div>
   <script type="text/javascript">
   $(document).ready(function(){
     var a = function () {
-      setTimeout(function(){window.location.href = "/redact";}, 3000);
+      setTimeout(function(){window.location.href = "/redact";}, 4000);
     }
     a();
   });

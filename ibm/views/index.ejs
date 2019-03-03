@@ -18,28 +18,48 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
 </head>
-<body class="">
+<body style="margin: 0; padding:0;">
 
 <!-- As a heading -->
 <nav class="navbar navbar-light unique-color">
-  <span class="navbar-brand" style="color: white">Off the Grid </span>
+  <span class="navbar-brand" style="color: white">
+    <a href="/" style="color: white;">Off the Grid</a>
+  </span>
+  <span style="font-size: 0.5rem; color: white">Powered by
+    <img src="https://cdn.freebiesupply.com/images/large/2x/ibm-logo-black-transparent.png" style="max-width: 65px;">
+    </span>
 </nav>
 
 
-<div class="container mt-5">
-  <div class="card z-depth-2 p-5 m-5 blue-gradient">
+<div class="container text-center">
+  <div class="card z-depth-2 p-5 m-3 blue-gradient">
     <div class="row">
       <div class="col-6" style="margin:0 auto">
           <form action="/upload" method="post">
-              <input type="file" name="files" id="fileInput" class="btn unique-color-dark" id="file" required="required" multiple>
+              <div class="text-center">
+                <input type="file" name="files" id="fileInput" class="btn unique-color-dark" id="file" required="required" multiple>
+              </div>
               <textarea hidden="hidden" class="form-control z-depth-1" id="texa" name="texa" rows="3" required="required" placeholder="Write something here..."></textarea>
-              <button class="btn unique-color-dark" type="submit" style="border-radius: 4px;">
-                  Upload
-              </button>
+              <div class="text-center"> 
+                <button class="btn unique-color-dark" type="submit" style="border-radius: 4px;">
+                    Upload TXT
+                </button>
+            </div>
           </form>
-          <pre id="fileDisplayArea"><pre>
+          <pre class="scrollbar" id="fileDisplayArea" style="color: white; background-color: rgba(255,255,255,0); margin:10px; max-height: 100px; min-width: 300px;"><pre>
       </div>
     </div>
+
+<!--         <div class="row">
+      <div class="col-6" style="margin:0 auto">
+         <form method="post">
+            <input type="file" name="file_input" />
+            <input type="submit" onclick="asd()" value="Convert file"/>
+        </form>
+          <pre id="sert"><pre>
+      </div>
+    </div> -->
+
     <div class="row">
       <div class="col-6" style="margin:0 auto">
           <form action="/analyze" method="post">
@@ -54,6 +74,8 @@
           </form>
       </div>
     </div>
+
+    <div class="float-right" style="color: white; text-align: right; font-size: 0.5rem;">Team CODERED</div>
   </div>
 </div>
 <script type="text/javascript">
@@ -81,5 +103,65 @@
 }
 
 </script>
+
+<script type="text/javascript">
+  function asd(){
+      var formData = new FormData();
+      formData.append('File', $('#file_input')[0].files[0], 'my_file.pdf');
+
+      $.ajax({
+          url: 'https://v2.convertapi.com/convert/pdf/to/txt?Secret=<YOUR SECRET HERE>',
+          data: formData,
+          processData: false,
+          contentType: false,  
+          method: 'POST',
+          success: function(data) {
+              console.log(data);
+          }
+      })
+  }
+
+</script>
+
+<style type="text/css">
+  /* container properties */
+  .scrollbar {
+    width:100%;
+    max-width:100%;
+    height:400px;
+    background-color:#7bd6fc;
+    overflow-y:scroll;
+  }
+  
+  /* customize scrollbar css */
+  #fileDisplayArea::-webkit-scrollbar{
+    width:0px;
+    background-color:rgba(255,255,255,0);
+  }
+  #fileDisplayArea::-webkit-scrollbar:horizontal{
+    height:8px;
+  }
+  #fileDisplayArea::-webkit-scrollbar-track{
+    border:1px #f2dfdf solid;
+    border-radius:7px;
+    -webkit-box-shadow:0 0 6px #c8c8c8 inset;
+  }
+  #fileDisplayArea::-webkit-scrollbar-thumb{
+    background-color:#fbecec;
+    border:1px solid #ecd9d9;
+    border-radius:16px;
+  }
+  #fileDisplayArea::-webkit-scrollbar-thumb:hover{
+    background-color:#bf4649;
+    border:1px solid #333333;
+    width:8px;
+  }
+  #fileDisplayArea::-webkit-scrollbar-thumb:active{
+    background-color:#e5bcbd;
+    border:1px solid #fed9d9;
+  }
+
+</style>
+
 </body>
 </html>
