@@ -13,7 +13,7 @@
 
 >run $ npm start
 
-> Server is started at localhost://3000
+> Server is started at http://localhost:3000/
 
 ##About
 
