@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+</head>
+<body class="">
+
+<!-- As a heading -->
+<nav class="navbar navbar-light unique-color">
+  <a href="/" style="color: white;">Off the Grid</a>
+  <span style="font-size: 0.5rem; color: white">Powered by
+    <img src="https://cdn.freebiesupply.com/images/large/2x/ibm-logo-black-transparent.png" style="max-width: 65px;">
+    </span>
+</nav>
+
+<div class="container">
+  <div>
+    <div class="h1"> Here You Go</div>
+    <form onsubmit="download(this['name'].value, this['text'].value)">
+      <input type="text" name="name" value="test.txt" hidden="hidden">
+      <input type="text" name="text" hidden="hidden" value="<%=out.translations[0].translation %>">
+      <input type="submit" class="btn btn-default" value="Download">
+    </form>
+  </div>
+  <div class="scrollbar card z-depth-2 mx-auto p-5 m-2 blue-gradient" id="scrollbar-custom" style="color: white; font-size: 1.25rem; overflow: scroll; max-height: 400px; max-width: 700px; margin: 0 auto;">
+    <%=out.translations[0].translation %>
+  </div><div style="text-align: right;"><span style="font-size: 0.75rem">If nothing comes up try re-loading/start again</span></div>
+  
+</div>
+
+<script type="text/javascript">
+  function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+</script>
+
+<style type="text/css">
+  /* container properties */
+  .scrollbar {
+    width:100%;
+    max-width:100%;
+    height:400px;
+    background-color:#7bd6fc;
+    overflow-y:scroll;
+  }
+  
+  /* customize scrollbar css */
+  #scrollbar-custom::-webkit-scrollbar{
+    width:8px;
+    background-color:#eababa;
+  }
+  #scrollbar-custom::-webkit-scrollbar:horizontal{
+    height:8px;
+  }
+  #scrollbar-custom::-webkit-scrollbar-track{
+    border:1px #f2dfdf solid;
+    border-radius:7px;
+    -webkit-box-shadow:0 0 6px #c8c8c8 inset;
+  }
+  #scrollbar-custom::-webkit-scrollbar-thumb{
+    background-color:#fbecec;
+    border:1px solid #ecd9d9;
+    border-radius:16px;
+  }
+  #scrollbar-custom::-webkit-scrollbar-thumb:hover{
+    background-color:#bf4649;
+    border:1px solid #333333;
+  }
+  #scrollbar-custom::-webkit-scrollbar-thumb:active{
+    background-color:#e5bcbd;
+    border:1px solid #fed9d9;
+  }
+
+</style>
+
+</body>
+</html>

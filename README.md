@@ -16,7 +16,10 @@
 
 > Server is started at http://localhost:3000/
 
-#About
+### Demo
+> Live Demo at https://ibmoffthegrid.herokuapp.com/
+
+## About
 
 The project is designed with the aim to identify sensitive personal information from an unstructured data and redact/mask it for privacy concerns. 
 
