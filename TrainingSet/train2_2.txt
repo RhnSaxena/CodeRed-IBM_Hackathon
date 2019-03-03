@@ -1,0 +1,20 @@
+Rep: This is Shilpa. How can I help you?
+Caller: Hi Shilpa, This is Rahul. I want to know that why there is no network from yesterday.
+Rep: Sure, I can help you. Do you want to know about the network for the number from which you are calling now?
+Caller: yes
+Rep: For verification purpose may I know your date of birth and email id
+Caller: My date of birth is 15th November 1989 and my email id is rahulchopra@gmail.com
+Rep: Sorry Sir, your due amount is pending from last 2 months, so your service is disconnected for some time.Can I know your address?
+Caller: Ohh, is it?.. I want to submit the pending amount. My address is 17, Model Town, Delhi.
+Rep: Ok Sir, Please tell me your company name and employee id
+Caller: I work for Google and my employee id is #186009 and my date of joining is 21st  April 2013
+Rep: Can I know your mobile number
+Caller: Yes,  my mobile number is 9671264908
+Rep: Can I know your aadhar no
+Caller: Yes,  my aadhar number is 224357855131
+Rep: Can I know your card no
+Caller: Yes,  my card no is 2653-9878-6758-8786
+Rep: Ok.. Just submit the remaining bill amount, your number will start working within 3 hours. Is there anything else that I may help you with
+Caller: No
+Rep: Thanks for calling Vodaphone. Have a good day.
+Caller: you too
